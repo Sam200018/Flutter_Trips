@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_trips_app/description_place.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,34 +28,10 @@ class MyApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: Scaffold(
-            appBar: AppBar(title: Text('<- Share')),
-            body: Stack(
-              children: <Widget>[
-                Container(
-                    height: double.infinity,
-                    width: double.infinity,
-                    child: Image.network(
-                      'https://pm1.narvii.com/6389/40a9f9e7a7b1d9f2ba44b36ac8205471bab279d6_hq.jpg',
-                      fit: BoxFit.cover,
-                    )),
-                Center(
-                  child: Container(
-                    alignment: Alignment.center,
-                    width: double.infinity,
-                    height: 50,
-                    color: Colors.black45,
-                    child: Text(
-                      'The boy who lived',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 40,
-                        fontWeight: FontWeight.normal,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            )) // MyHomePage(title: 'Flutter Demo Home Page'),
+          appBar: AppBar(title: Text('<- Share')),
+          body: new DescriptionPlace('Bahamas', 4,
+              'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'),
+        ) // MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }
 }
