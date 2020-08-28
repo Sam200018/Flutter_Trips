@@ -74,6 +74,9 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/img/people.jpg #es para agregar el recuso de assets
+
 
   fonts:
     - family: Lato #como lo vamos a identificar
