@@ -76,6 +76,9 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/img/people.jpg #es para agregar el recuso de assets
+    - assets/img/harry.jpg
+    - assets/img/coca.jpg # para que jale las imagénes tenemos que ponerlas en los assets en el yaml
+
 
 
   fonts:

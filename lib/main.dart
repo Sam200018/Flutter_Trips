@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/description_place.dart';
+import 'package:platzi_trips_app/gradient_back.dart';
+import 'package:platzi_trips_app/review_list.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,9 +30,20 @@ class MyApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: Scaffold(
-          appBar: AppBar(title: Text('<- Share')),
-          body: new DescriptionPlace('Bahamas', 4,
-              'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'),
+          // appBar: AppBar(title: Text('<- Share')),
+          // body: new
+          body: Stack(
+            children: <Widget>[
+              ListView(
+                children: <Widget>[
+                  DescriptionPlace('Bahamas', 4,
+                      'simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'),
+                  ReviewList(),
+                ],
+              ),
+              GradientBack(),
+            ],
+          ),
         ) // MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }

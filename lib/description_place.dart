@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_trips_app/review_list.dart';
 
 class DescriptionPlace extends StatelessWidget {
   String namePlace;
@@ -92,6 +93,7 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         title_stars,
         descrption,
+        ReviewList(),
       ],
     );
   }
